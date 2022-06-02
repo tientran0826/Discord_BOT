@@ -21,7 +21,7 @@ async def determine_prefix(bot, message):
     else:
         return prefix
 
-client = commands.Bot(command_prefix = determine_prefix)
+client = commands.Bot(command_prefix = determine_prefix,help_command=None)
 
 @client.command()
 @commands.guild_only()
