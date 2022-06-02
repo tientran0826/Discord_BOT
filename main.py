@@ -29,7 +29,6 @@ async def setprefix(ctx, *, prefixes=""):
     custom_prefixes[ctx.guild.id] = prefixes.split() or prefix
     await ctx.send(f"Chuyển prefix thành `{prefixes}` ")
 
-
 #Run server
 if __name__=="__main__":
   client.add_cog(Anime(client))
