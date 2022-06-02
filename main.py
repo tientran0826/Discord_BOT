@@ -3,7 +3,6 @@ import os
 from pydoc import describe
 import re
 import discord
-import dismusic
 import requests
 import json 
 from sources.url_shortener import URLShoter
@@ -30,15 +29,11 @@ async def setprefix(ctx, *, prefixes=""):
     custom_prefixes[ctx.guild.id] = prefixes.split() or prefix
     await ctx.send(f"Chuyển prefix thành `{prefixes}` ")
 
-#Lavalink server
-client.lavalink_nodes = [
-    {"host": "lavalink.islantay.tk", "port": 8880, "password": "waifufufufu"},
-]
+
 #Run server
 if __name__=="__main__":
   client.add_cog(Anime(client))
   client.add_cog(Food(client))
   client.add_cog(Outside(client))
   client.add_cog(URLShoter(client))
-  client.load_extension('dismusic')
   client.run(os.getenv('TOKEN'))
