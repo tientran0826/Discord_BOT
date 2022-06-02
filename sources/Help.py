@@ -13,23 +13,25 @@ help_content = """
                             __/ |          
                             |___/   
 ================================================
-*Hệ thống*
+Hệ thống
 - setprefix + list() : thay đổi prefix mặc định
-*Anime*
+Anime
 - animer: Random ảnh anime
 - animegif: Random ảnh anime dạng .gif
 - cry: khóc
 - kiss: Hun
 - animes: Tìm tên anime dựa trên ảnh hoặc video
-*Rút gọn link*
+Rút gọn link
 - tiny : Rút gọn link sang tinyurl
-*Random món ăn*
+Random món ăn
 - fadd: Thêm món vào list
 - fshow: Danh sách món đã thêm
 - frandom: Lựa chọn bất kỳ s1 chón 1 món trong danh sách 
 - fclear: Xoá danh sách vừa tạo
-*Ngoài lề*
+Ngoài lề
 - ck: Chửi chó khoa :>
+
+Source code: https://github.com/tientran0826/discord_bot 
 """
 
 class Help(commands.Cog):
