@@ -9,7 +9,7 @@ from sources.url_shortener import URLShoter
 from sources.food_random import Food
 from sources.waifu import Anime
 from discord.ext import commands,tasks
-from sources.outside import Outside
+from sources.outside import Outside 
 
 prefix = ["?"]
 custom_prefixes = {}
